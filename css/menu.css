@@ -1,0 +1,73 @@
+#menu_colsalsero {
+  font:normal 12px 'Trebuchet MS',Trebuchet,Arial,Sans-Serif;
+  color:white;
+  text-transform:uppercase;
+	/* outline:1px solid; */
+	width:960px; /* Fixed width. Measure it manually */
+	margin:0px auto;
+}
+
+#menu_colsalsero ul {
+  height:50px;
+  margin:0px 0px;
+  padding:0px 0px;
+  overflow:hidden;
+}
+
+#menu_colsalsero li {
+  float:left;
+  display:inline;
+  list-style:none;
+  margin:0px 0px;
+  padding:0px 0px;
+}
+
+/*Control de colores degradados de la botonera primaria*/
+#menu_colsalsero a,
+#menu_colsalsero a:before {
+  display:block;
+  margin:0px 0px;
+  padding:0px 40px;/*Control del margen de las letras de la botonera*/
+  line-height:50px;
+  color:white;
+  text-decoration:none;
+  background-color:#900;
+  background-image:-webkit-linear-gradient(top, #900 0%, #6A0808 50%, #620303 50%, #6A0808 100%);
+  background-image:-moz-linear-gradient(top, #900 0%, #6A0808 50%, #620303 50%, #6A0808 100%);
+  background-image:-ms-linear-gradient(top, #900 0%, #6A0808 50%, #620303 50%, #6A0808 100%);
+  background-image:-o-linear-gradient(top, #900 0%, #6A0808 50%, #620303 50%, #6A0808 100%);
+  background-image:linear-gradient(top, #900 0%, #6A0808 50%, #620303 50%, #6A0808 100%);
+  -webkit-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.1);
+  -moz-box-shadow:inset 0px 1px 0px rgba(255,255,255,0.1);
+  box-shadow:inset 0px 1px 0px rgba(255,255,255,0.1);
+  position:relative;
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+
+/*Control de colores degradados de la botonera secundaria*/
+#menu_colsalsero a:before {
+  content:attr(data-clone);
+  position:absolute;
+  top:100%;
+	right:0px;
+  left:0px;
+  display:block;
+  background-color:red;
+  background-image:-webkit-linear-gradient(top, #ddd, red);
+  background-image:-moz-linear-gradient(top, #ddd, red);
+  background-image:-ms-linear-gradient(top, #ddd, red);
+  background-image:-o-linear-gradient(top, #ddd, red);
+  background-image:linear-gradient(top, #ddd, red);
+  border-top:2px solid rgba(0,0,0,0.2);
+  color:#660000;
+}
+
+/*Control del margen superior cuando haces click en la botonera*/
+#menu_colsalsero a:hover {
+  margin-top:-50px;
+  margin-bottom:1px;
+}
